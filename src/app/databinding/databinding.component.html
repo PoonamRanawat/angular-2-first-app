@@ -1,0 +1,21 @@
+<h1>string interpolation</h1>
+<p>
+  {{stringInterpolation}} {{numberInterpolation}}
+</p>
+<hr>
+<h1>property interpolation</h1>
+<input type="text" [value]="stringInterpolation">
+<p [ngClass]="{redBorder : onSet()}">
+    Hey, Is this tag sytled ?
+</p>
+<p [ngStyle]="{color : 'green'}">
+    Hey, Is this tag sytled ?
+</p>
+<hr>
+<h1>Custom binding property</h1>
+<app-propertybinding [result]="10"></app-propertybinding>
+<hr>
+<h1>Event Binding property</h1>
+<hr>
+<h1>Two way databinding</h1>
+<app-twobinding></app-twobinding>
